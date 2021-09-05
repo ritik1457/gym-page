@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div style="height: 100vh;">
+        <header class="container">
+            <div class="left center">GYM</div>
+            <div class="middle center">
+                <menu>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PLANS</a></li>
+                    <li><a href="#">TRAINERS</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </menu>
+            </div>
+            <div class="right center">
+                <button>LOGIN</button>
+            </div>
+        </header>
+
+        <div style="margin-top: 5vh;">
+            <section class="slideshow">
+                <div></div>
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio button start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <!-- slide image start -->
+                        <div class="slide first">
+                            <img src="https://source.unsplash.com/400x450/?gymnastic" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://source.unsplash.com/400x450/?workout" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://source.unsplash.com/400x450/?dumbles" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="https://source.unsplash.com/400x450/?gym" alt="">
+                        </div>
+                    </div>
+
+                    <!-- manual navigation  -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="welcome">
+                        <h1 style="font-size: xx-large;">Welcome,<br>To our Gym.</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Minima, hic eligendi sit
+                            voluptatibus
+                            illo rerum!</p>
+                        <button style="margin-top: 2vh;">Become a Member</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="detail">
+            <div class="location address center"><span>146, Opp56shops, Apollotower</span></div>
+            <div class="location phone center"><span>+91-755-5978-155</span></div>
+        </section>
+    </div>
+
+    <hr style="padding: 0px;margin: 0px;background-color: grey; border-color: grey;">
+
+    <section>
+        <div class="grid">
+            <div class="heading center">WHY JOIN US</div>
+            <div style="text-align: center;">
+                <div class="we reveal"><img src="img/coach.png" alt=""></div>
+                <div class="we reveal"><img src="img/care.png" alt=""></div>
+                <div class="we reveal"><img src="img/connect.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid">
+            <div class="train">
+                <img src="img/emily-sea-coiWR0gT8Cw-unsplash.jpg" alt="">
+                <div class="text">GYMNASTIC</div>
+            </div>
+            <div class="sticky heading center">WHAT WE TRAIN</div>
+        </div>
+
+        <div class="grid">
+            <div class="train">
+                <img src="img/victor-freitas-hOuJYX2K5DA-unsplash.jpg" alt="">
+                <div class="text">WEIGHTLIFTING</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="train">
+                <img src="img/gabin-vallet-JVnLqWGWVzs-unsplash.jpg" alt="">
+                <div class="text">CARDIO</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="train">
+                <img src="img/scott-webb-U5kQvbQWoG0-unsplash.jpg" alt="">
+                <div class="text">STRENGTH</div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="train stickover">
+                <img src="img/logan-weaver-CS9ptdGhE0M-unsplash.jpg" alt="">
+                <div class="text">BOXING</div>
+            </div>
+        </div>
+    </section>
+
+    <hr style="padding: 0px;margin: 0px;background-color: grey; border-color: grey;">
+    
+    <section class="grid">
+        <div class="center" style="width: 50vw; height: 90vh; background: yellowgreen;">
+            <div class="calci">
+                <h2>BMI Calculator</h2>
+            </div>
+        </div>
+        <div class="center bmi">
+            <div>
+                <div>
+                    <input type="text" id="height" placeholder="height (in cm)">
+                </div>
+                <div>
+                    <input type="text" id="weight" placeholder="weight (in kg)">
+                </div>
+                <div class="center">
+                    <button style="margin-top: 15px;" onclick="calculator()">Calculate</button>
+                </div>
+                <div id="result" class="center"></div>
+            </div>
+        </div>
+    </section>
+    
+    <hr style="padding: 0px;margin: 0px;background-color: grey; border-color: grey;">
+
+    <footer class="grid">
+        <div class="center">
+            @copywrite 2021
+        </div>
+        <div class="center icon">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </div>
+    </footer>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
